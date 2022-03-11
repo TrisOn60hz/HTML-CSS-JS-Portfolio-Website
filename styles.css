@@ -210,23 +210,27 @@
   }
   
   .hero__heading {
-    font-size: 100px;
-    margin-bottom: 24px;
+    font-size: 120px;
+    margin-bottom: 25px;
     color: #fff;
   }
   
   .hero__heading span {
-    background: #ee0979; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
+    background: #ee0979; 
+    /* background: -webkit-linear-gradient(
       to right,
       #ff6a00,
       #ee0979
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    );
     background: linear-gradient(
       to right,
       #ff6a00,
       #ee0979
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    );  */
+    background: #a8ff78; 
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  
+  background: linear-gradient(to right, #78ffd6, #a8ff78); 
+
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -235,20 +239,24 @@
   }
   
   .hero__description {
-    font-size: 60px;
-    background: #da22ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
+    font-size: 25px;
+    background: #da22ff; 
+    background: #7F7FD5;  
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+
+    /* background: -webkit-linear-gradient(
       to right, 
         #2C5364, 
         #9114ff, 
         #da22ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    ); 
     background: linear-gradient(
       to right, 
       #2C5364, 
       #9114ff, 
       #da22ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    );  */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -510,9 +518,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
+
   }
   
   .services__card:nth-child(2) {
@@ -530,6 +540,13 @@
     background: #C02425;  
       background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  
       background: linear-gradient(to right, #F0CB35, #C02425); 
+  }
+
+  .services__card div {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: #49a09d
   }
   
   .services__card h2 {
