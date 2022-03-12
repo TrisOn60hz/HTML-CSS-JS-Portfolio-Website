@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <nav class="navbar">
+      <div class="navbar__container">
+                <a href="index.html" id="navbar__logo">Tristan's Website</a>
+                <link rel="stylesheet" href="contact.css" />
+                <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+
+              <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="about-page">About Me</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="services-page">My Stuff</a>
+                </li>
+                
+                <li class="navbar__btn">
+                    <!-- <a href="#sign-up" href="contact.html" class="button" id="signup">Contact Me</a> -->
+                    <a  href="contact.html" class="button" id="signup">Contact Me</a>
+                </li>
+              </ul>
+
+        </div>
+      </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+</head>
+
+
+
+  <body>
+    <div class="container">
+      <form onsubmit="sendEmail(); reset(); return false">
+        <h3>Contact me</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button type="submit" >Send</button>
+
+      </form>
+          <!-- <form action="https://formsubmit.co/tpham26@ssis.edu.vn" method="POST"></form>
+          <input type="text" class="input-field" placeholder="Your Name" required>
+          <input type="email" class="input-field" placeholder="Your Email" required>            
+          <input type="text" class="input-field" placeholder="Subject">
+          <textarea type="text" class="input-field textarea-field" placeholder="Your message" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn">Send Message</button> -->
+          <!-- </textarea>  
+        </form>  -->
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "tpham26@ssis.edu.vn",
+        Password : "password",
+        To : 'tristanqpham@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Inquiry",
+        Body : "And this is the body"
+      }).then(
+      message => alert(message)
+        );
+      }
+      
+    </script>
+  </body>
+</html>
