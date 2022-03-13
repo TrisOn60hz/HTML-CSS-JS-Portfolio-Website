@@ -37,20 +37,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me</title>
 </head>
-<body>
-    
-</body>
+
+
+
+  <body>
+    <div class="container">
+      <form onsubmit="sendEmail(); reset(); return false">
+        <h3>Contact me</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button type="submit" >Send</button>
+
+      </form>
+          <!-- <form action="https://formsubmit.co/tpham26@ssis.edu.vn" method="POST"></form>
+          <input type="text" class="input-field" placeholder="Your Name" required>
+          <input type="email" class="input-field" placeholder="Your Email" required>            
+          <input type="text" class="input-field" placeholder="Subject">
+          <textarea type="text" class="input-field textarea-field" placeholder="Your message" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn">Send Message</button> -->
+          <!-- </textarea>  
+        </form>  -->
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "tpham26@ssis.edu.vn",
+        Password : "password",
+        To : 'tristanqpham@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Inquiry",
+        Body : "And this is the body"
+      }).then(
+      message => alert(message)
+        );
+      }
+      
+    </script>
+  </body>
 </html>
-<body>
-        <div class="contact__box">
-          <form>
-            <input type="text" class="input-field" placeholder="Your Name">
-            <input type="text" class="input-field" placeholder="Your Email">
-            <input type="text" class="input-field" placeholder="Subject">
-            <textarea type="text" class="input-field textarea-field" placeholder="Your message"
-            placeholder="Your message"></textarea>
-            <button type="button" class="btn">Send Message</button>
-          </textarea>  
-          </form> 
-        </div>
-      </body>
