@@ -2,40 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     scroll-behavior: smooth;
     z-index: 1;
   }
 
-/* Contact Page */
-body {
-    color: #8a8a8a; 
-    background-color: #2a2a2a;
-  }
-
-  header h1 {
-    color: #cacaca;
-    font-size: 2.6rem;
-    line-height: 1em;
-    margin-bottom: 0.15em;
-    margin-top: 2rem;
-  }
-
-  header p {
-    font-size: 1.15em;
-    line-height: 1.7em;
-    color: #8a8a8a;
-  }
-
-  span.fancy a{
-    display: inline-block;
-    position: relative;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 1000;
-    font-size: 1.5rem;
-    color: #8a8a8a;
-    text-decoration: none;
-  }
+/* Contact */
 
 
   
